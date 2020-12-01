@@ -28,3 +28,12 @@ console.log(ages1);
 
 const ages = people.map((person) => person.age);
 console.log(ages);
+
+const newPeople = people.map((item) => {
+  return {
+    firstName: item.name.toUpperCase(),
+    oldAge: item.age + 20,
+  };
+});
+
+console.log(newPeople);
