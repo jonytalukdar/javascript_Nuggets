@@ -37,3 +37,6 @@ const newPeople = people.map((item) => {
 });
 
 console.log(newPeople);
+
+const names = people.map((per) => `<h1>${per.name}</h1>`);
+document.querySelector('#result').innerHTML = names.join('');
